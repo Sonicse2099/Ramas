@@ -3,28 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Comandos Git</title>
+    <title>Sonicse – Guía de Comandos Git</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Exo+2:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
+    <!-- Anillos decorativos de fondo -->
+    <div class="bg-ring r1"></div>
+    <div class="bg-ring r2"></div>
+    <div class="bg-ring r3"></div>
+    <div class="bg-ring r4"></div>
+ 
     <header>
-        <h1>Diccionario Git Interactiva</h1>
-        <p>Aprendiendo a trabajar con ramas</p>
+        <div class="header-inner">
+            <div class="logo">
+                <div class="logo-ring">
+                    <span class="logo-ring-inner"></span>
+                </div>
+                <div class="logo-text">
+                    <span class="brand">SONICSE</span>
+                    <span class="tagline">Git Command Guide</span>
+                </div>
+            </div>
+            <div class="speed-lines">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <h1>Diccionario Git <span class="highlight">Interactivo</span></h1>
+            <p class="subtitle">Aprende a trabajar con ramas a la velocidad del sonido</p>
+        </div>
     </header>
+ 
     <main id="contenedor">
-        <section class="comando">
-            <h2>git init</h2>
-            <p>Inicializa un nuevo repositorio local en la carpeta actual.</p>
+ 
+        <div class="ring-counter">
+            <div class="ring-icon">◎</div>
+            <span id="ring-count">0</span>
+            <span class="ring-label">RINGS</span>
+        </div>
+ 
+        <section class="comando" data-cmd="init">
+            <div class="cmd-header">
+                <div class="cmd-badge">01</div>
+                <h2>git init</h2>
+                <div class="ring-pickup" title="¡Recoge el anillo!">◎</div>
+            </div>
+            <p>Inicializa un nuevo repositorio local en la carpeta actual. Es el primer paso para empezar a trackear tu proyecto.</p>
+            <div class="cmd-example">
+                <span class="prompt">$</span> git init
+            </div>
         </section>
-        <section class="comando">
-            <h2>git clone</h2>
-            <p>Descarga una copia exacta de un repositorio remoto.</p>
+ 
+        <section class="comando" data-cmd="clone">
+            <div class="cmd-header">
+                <div class="cmd-badge">02</div>
+                <h2>git clone</h2>
+                <div class="ring-pickup" title="¡Recoge el anillo!">◎</div>
+            </div>
+            <p>Descarga una copia exacta de un repositorio remoto, incluyendo todo su historial de cambios.</p>
+            <div class="cmd-example">
+                <span class="prompt">$</span> git clone &lt;url&gt;
+            </div>
         </section>
-        <section class="comando">
-            <h2>git add</h2>
-            <p>Prepara los cambios (staging) para ser incluidos en el próximo commit.</p>
+ 
+        <section class="comando" data-cmd="add">
+            <div class="cmd-header">
+                <div class="cmd-badge">03</div>
+                <h2>git add</h2>
+                <div class="ring-pickup" title="¡Recoge el anillo!">◎</div>
+            </div>
+            <p>Prepara los cambios (staging) para ser incluidos en el próximo commit. Usa <code>git add .</code> para agregar todo.</p>
+            <div class="cmd-example">
+                <span class="prompt">$</span> git add .
+            </div>
         </section>
-        <!-- Aquí los estudiantes agregarán más comandos luego -->
+ 
+        <section class="comando" data-cmd="commit">
+            <div class="cmd-header">
+                <div class="cmd-badge">04</div>
+                <h2>git commit</h2>
+                <div class="ring-pickup" title="¡Recoge el anillo!">◎</div>
+            </div>
+            <p>Guarda los cambios preparados en el historial del repositorio con un mensaje descriptivo.</p>
+            <div class="cmd-example">
+                <span class="prompt">$</span> git commit -m <span class="str">"mensaje"</span>
+            </div>
+        </section>
+ 
+        <section class="comando" data-cmd="branch">
+            <div class="cmd-header">
+                <div class="cmd-badge">05</div>
+                <h2>git branch</h2>
+                <div class="ring-pickup" title="¡Recoge el anillo!">◎</div>
+            </div>
+            <p>Lista, crea o elimina ramas. Las ramas permiten trabajar en paralelo sin afectar el código principal.</p>
+            <div class="cmd-example">
+                <span class="prompt">$</span> git branch &lt;nombre-rama&gt;
+            </div>
+        </section>
+ 
+        <section class="comando" data-cmd="merge">
+            <div class="cmd-header">
+                <div class="cmd-badge">06</div>
+                <h2>git merge</h2>
+                <div class="ring-pickup" title="¡Recoge el anillo!">◎</div>
+            </div>
+            <p>Une los cambios de una rama con otra. Combina el trabajo de diferentes desarrolladores en una sola línea.</p>
+            <div class="cmd-example">
+                <span class="prompt">$</span> git merge &lt;rama&gt;
+            </div>
+        </section>
+ 
+        <section class="comando" data-cmd="push">
+            <div class="cmd-header">
+                <div class="cmd-badge">07</div>
+                <h2>git push</h2>
+                <div class="ring-pickup" title="¡Recoge el anillo!">◎</div>
+            </div>
+            <p>Envía tus commits locales al repositorio remoto para compartir tu trabajo con el equipo.</p>
+            <div class="cmd-example">
+                <span class="prompt">$</span> git push origin &lt;rama&gt;
+            </div>
+        </section>
+ 
+        <section class="comando" data-cmd="pull">
+            <div class="cmd-header">
+                <div class="cmd-badge">08</div>
+                <h2>git pull</h2>
+                <div class="ring-pickup" title="¡Recoge el anillo!">◎</div>
+            </div>
+            <p>Descarga e integra los cambios del repositorio remoto en tu rama local. Combina fetch + merge.</p>
+            <div class="cmd-example">
+                <span class="prompt">$</span> git pull origin &lt;rama&gt;
+            </div>
+        </section>
+ 
     </main>
+ 
+    <footer>
+        <div class="footer-ring">◎ ◎ ◎</div>
+        <p>Hecho con velocidad por <strong>Sonicse</strong> &mdash; Keep coding fast.</p>
+    </footer>
+ 
+    <!-- Partícula de anillo al recoger -->
+    <div class="ring-collect-fx" id="ringFx">+1 ◎</div>
+ 
+    <script>
+        let rings = 0;
+        const counter = document.getElementById('ring-count');
+        const fx = document.getElementById('ringFx');
+ 
+        document.querySelectorAll('.ring-pickup').forEach(el => {
+            el.addEventListener('click', function(e) {
+                rings++;
+                counter.textContent = rings;
+                counter.classList.remove('pop');
+                void counter.offsetWidth;
+                counter.classList.add('pop');
+ 
+                fx.style.left = (e.clientX - 20) + 'px';
+                fx.style.top = (e.clientY - 30) + 'px';
+                fx.classList.remove('show');
+                void fx.offsetWidth;
+                fx.classList.add('show');
+ 
+                this.classList.add('collected');
+                setTimeout(() => this.classList.remove('collected'), 600);
+            });
+        });
+ 
+        // Animación de entrada escalonada
+        const cards = document.querySelectorAll('.comando');
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    obs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        cards.forEach(c => obs.observe(c));
+    </script>
 </body>
 </html>
